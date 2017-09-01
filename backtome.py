@@ -63,6 +63,7 @@ def main():
         sgroup.add_argument("--all", action="store_true", help="Genera payload per tutti gli OS")
         sgroup.add_argument("--raw", action="store_true", help="Genera raw payload")
         sgroup.add_argument("-n", "--name", dest='name',type=str, default="backdoored", help="Nome del file")
+        sgroup.add_argument("--clean",action='store_true',help="Clean directories")
         if len(sys.argv) == 1:
             parser.print_help()
             sys.exit(1)
@@ -79,6 +80,8 @@ def main():
             windows = True
             linux = True
             macos = True
+        if options.clean:
+            cleanup()
         if options.configure:
             gen.configure(options.host,options.port)
         if options.generate:
