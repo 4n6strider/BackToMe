@@ -5,6 +5,7 @@ import sys
 import argparse
 import core.handler as handler
 import core.generator as gen
+import subprocess
 from argparse import RawTextHelpFormatter
 from core.banners import get_banner
 try:
