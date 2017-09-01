@@ -1,4 +1,4 @@
-# BackToMe
+# BackToMe [UNSTABLE]
 <img src="https://img.shields.io/badge/Python-2.7.13-blue.svg"> <img src="https://img.shields.io/badge/OS-Win%20Lin%20Osx-green.svg"> <img src="https://img.shields.io/badge/phase-development-orange.svg"> <img src="https://img.shields.io/badge/verssion-1.0--unstable-red.svg"><br>
 Little framework made in python to create payloads for Linux, Windows and OSX with unique handler.
 
@@ -13,3 +13,10 @@ This little framework is intended to help pentesters/red teamers in creating FUD
 - <b>enumerate-win</b> | Get windows based os infos. Ex: some net actions and some info gathering actions
 - <b>enumerate-linux</b> | Get linux based os infos. Ex: ssh root acces enabled and some info gathering actions
 - <b>drop into terminal</b> | Try to get bash/cmd session with sockets.
+
+# EXTERNAL DEPENDENCIES
+- [PyInstaller](http://www.pyinstaller.org/)<br>
+- [Termicolor](https://pypi.python.org/pypi/termcolor)<br>
+- [Wine](https://www.winehq.org/)<br>
+- [psutil](https://pypi.python.org/pypi/psutil/5.0.1)<br>
+- [Py2Applet](http://undefined.org/python/py2app.html)<br>
