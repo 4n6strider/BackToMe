@@ -1,0 +1,4 @@
+pyinstaller
+py2applet
+psutil==5.01
+termcolor
